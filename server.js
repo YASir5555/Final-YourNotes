@@ -33,7 +33,7 @@ app.use('/api/v1/notes', notesRouter);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-const port = 5000; // process.env.PORT ||
+const port = process.env.PORT || 5000; //
 console.log(port);
 
 const start = async () => {
